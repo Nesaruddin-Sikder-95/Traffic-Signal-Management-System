@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{537A381C-5304-4F08-8D57-FD350427EA28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TrafficSignalManagementAndControllingSystem</RootNamespace>
+    <AssemblyName>TrafficSignalManagementAndControllingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikeDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikeLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikeRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bikeUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busLeft %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cycleDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cycleLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cycleRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cycleUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green ligh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mf2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-top-view-png-svg-royalty-free-library-person-png-top-view-1901_2890.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCarDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCarLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCarRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redCarUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rikshaDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rikshaLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rikshaRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rikshaUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteCarDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteCarLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteCarRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whiteCarUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yallowCarDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yallowCarLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yallowCarRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yallowCarUpper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Em1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Em2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuDown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuLeft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmbuUpper1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireLeft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireRight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireUpper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeDown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeLeft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeUpper1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Em3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coche1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redcar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yU.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
